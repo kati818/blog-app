@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #4e5a59;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.homepage-background {
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  background-image: linear-gradient(
+      rgba(100, 100, 100, 0.6),
+      rgba(100, 100, 100, 0.6)
+    ),
+    url("/images/typewriter.jpg");
+  background-size: cover;
+}
+
+.homepage-header {
+  color: #ffff;
+}
+
+.container {
+  padding: 2rem 4rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 4.8rem;
+}
+
+.default-nav-color li {
+  color: #4e5a59;
+}
+
+.nav-link-color li {
+  color: #ffff;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #00a693;
+  border: 1px solid #ffae00;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #ffae00;
+  border: 1px solid #00a693;
+  border-radius: 50px;
+  padding: 10px 20px;
+}
+
+.main-container {
+  display: flex;
+  gap: 10rem;
+  padding: 2rem 4rem;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-container h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation: typing 3.5s steps(20, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ffae00;
+  }
+}
+
+.homepage-header {
+  font-size: 6.4rem;
+}
+
+.start-link {
+  padding: 10px 20px; /* Shortened padding */
+  border: 1px solid #00a693;
+  border-radius: 20px;
+  background: #00a693;
+  color: #fff;
+  font-size: 16px; /* Smaller font size */
+  font-weight: 500;
+  line-height: 1.5;
+  width: 250px;
+  margin: 10px 0;
+}
+
+.start-link:hover,
+.start-link:active {
+  border: 1px solid #ffae00;
+  background: #ffae00;
+  color: #fff;
+}
+
+.posts-link {
+  padding: 10px 20px;
+  border: 1px solid #ffae00;
+  border-radius: 50px;
+  background: #ffae00;
+  background-color: #ffae00;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.posts-link:hover,
+.posts-link:active {
+  border: 1px solid #00a693;
+  border-radius: 50px;
+  background-color: #00a693;
+  color: #fff;
+}
+
+/* Make sure the main content takes the remaining height, excluding the footer */
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1; /* This makes the main content take up remaining space */
+}
+
+.login-container,
+.register-container,
+.post-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.login-box h1,
+.register-box h1,
+.create-box h1 {
+  font-size: 3.6rem;
+  font-weight: 500;
+}
+
+.login-box form,
+.register-box form,
+.create-box form {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 12px;
+}
+
+form {
+  margin: 0;
+}
+
+.input-group input {
+  border: solid rgba(0, 0, 0, 0.25) 1px;
+  font-size: 11pt;
+  padding: 16px;
+  width: 100%;
+}
+
+.recovery-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.login-box a {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: #4e5a59;
+}
+
+.upload-button {
+  padding: 6px 16px;
+  border: 1px solid #00a693;
+}
+
+.GreenButtonSolid {
+  padding: 18px 64px;
+  border: 1px solid #00a693;
+  border-radius: 0;
+  background: #00a693;
+  background-color: #00a693;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.GreenButtonSolid:hover,
+.GreenButtonSolid:active {
+  border: 1px solid #00a693;
+  background: #fff;
+  color: #00a693;
+}
+
+.login-link {
+  padding: 1rem 0;
+}
+
+.login-link p {
+  font-size: 11px;
+}
+
+.login-link p a {
+  font-size: 14px;
+}
+
+.edit-icon {
+  color: #fff;
+}
+
+.container-for-posts {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.allposts-header {
+  padding-bottom: 20px;
+  font-size: 6.4rem;
+}
+
+.posts-list li {
+  list-style: none;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 2rem 4rem;
+  color: #00a693;
+}
+
+.copyright {
+  font-size: 1rem;
+}

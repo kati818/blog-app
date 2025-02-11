@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #4e5a59;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 4.8rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #4e5a59;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #00a693;
+}
+
+/* Make sure the main content takes the remaining height, excluding the footer */
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1; /* This makes the main content take up remaining space */
+}
+
+.login-container,
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.login-box h1,
+.register-box h1 {
+  font-size: 3.6rem;
+  font-weight: 500;
+}
+
+.login-box form,
+.register-box form {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 12px;
+}
+
+form {
+  margin: 0;
+}
+
+.input-group input {
+  border: solid rgba(0, 0, 0, 0.25) 1px;
+  font-size: 11pt;
+  padding: 16px;
+  width: 100%;
+}
+
+.recovery-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.login-box a {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: #4e5a59;
+}
+
+.GreenButtonSolid {
+  padding: 18px 64px;
+  border: 1px solid #00a693;
+  border-radius: 0;
+  background: #00a693;
+  background-color: #00a693;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.GreenButtonSolid:hover,
+.GreenButtonSolid:active {
+  border: 1px solid #00a693;
+  background: #fff;
+  color: #00a693;
+}
+
+.login-link {
+  padding: 1rem 0;
+}
+
+.login-link p {
+  font-size: 11px;
+}
+
+.login-link p a {
+  font-size: 14px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 2rem 4rem;
+  color: #fff;
+}
+
+.copyright {
+  font-size: 1rem;
+}
