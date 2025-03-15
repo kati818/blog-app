@@ -34,23 +34,15 @@ body {
   padding: 2rem 4rem;
 }
 
-.nav-list {
+/* .nav-list {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: end;
   gap: 4.8rem;
-}
+} */
 
-.default-nav-color li {
-  color: #4e5a59;
-}
-
-.nav-link-color li {
-  color: #ffff;
-}
-
-.nav-link:link,
+/* .nav-link:link,
 .nav-link:visited {
   display: inline-block;
   text-decoration: none;
@@ -68,6 +60,18 @@ body {
   color: #ffae00;
   border: 1px solid #00a693;
   border-radius: 50px;
+} */
+
+.nav-icon {
+  display: block;
+  font-size: 2rem;
+  color: #00a693;
+  margin-left: auto;
+}
+
+.nav-icon:hover {
+  color: #ffae00;
+  transition: all 0.3s;
 }
 
 .main-container {
@@ -122,12 +126,12 @@ body {
 }
 
 .start-link {
-  padding: 10px 20px; /* Shortened padding */
+  padding: 10px 20px;
   border: 1px solid #00a693;
   border-radius: 20px;
   background: #00a693;
   color: #fff;
-  font-size: 16px; /* Smaller font size */
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   width: 250px;
@@ -183,6 +187,7 @@ body {
 .create-box h1 {
   font-size: 3.6rem;
   font-weight: 500;
+  padding-bottom: 1rem;
 }
 
 .login-box form,
@@ -209,6 +214,7 @@ form {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+  padding-bottom: 1rem;
 }
 
 .login-box a {
@@ -221,12 +227,12 @@ a {
   color: #4e5a59;
 }
 
-.upload-button {
-  padding: 6px 16px;
-  border: 1px solid #00a693;
+.button {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
-.GreenButtonSolid {
+.green-button-solid {
   padding: 18px 64px;
   border: 1px solid #00a693;
   border-radius: 0;
@@ -236,10 +242,11 @@ a {
   font-size: 18px;
   font-weight: 500;
   line-height: 1.5;
+  cursor: pointer;
 }
 
-.GreenButtonSolid:hover,
-.GreenButtonSolid:active {
+.green-button-solid:hover,
+.green-button-solid:active {
   border: 1px solid #00a693;
   background: #fff;
   color: #00a693;
@@ -254,7 +261,20 @@ a {
 }
 
 .login-link p a {
-  font-size: 14px;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #00a693;
+}
+
+.login-link p a:hover,
+.login-link p a:active {
+  color: #ffae00;
+  transition: all 0.3s;
+}
+ {
+  cursor: pointer;
+  font-size: 1rem;
+  color: #00a693;
 }
 
 .edit-icon {
@@ -272,6 +292,12 @@ a {
 .allposts-header {
   padding-bottom: 20px;
   font-size: 6.4rem;
+}
+
+.no-posts {
+  text-align: center;
+  font-weight: 300;
+  color: #b3b6b6;
 }
 
 .posts-list li {
@@ -309,13 +335,10 @@ footer {
     background-size: cover;
   }
 
-  .nav-link:link,
-  .nav-link:visited {
+  .nav-icon {
+    display: block;
+    font-size: 2rem;
     color: #00a693;
-    border: 1px solid #ffae00;
-    padding: 10px 10px;
-    font-weight: 500;
-    font-size: 1rem;
   }
 }
 
@@ -330,14 +353,5 @@ footer {
 
   .homepage-header {
     font-size: 1.2rem;
-  }
-
-  .nav-link:link,
-  .nav-link:visited {
-    color: #00a693;
-    border: 0.5px solid #ffae00;
-    padding: 5px 10px;
-    font-weight: 400;
-    font-size: 1rem;
   }
 }

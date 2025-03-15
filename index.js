@@ -1,6 +1,5 @@
 import express from "express";
 import bodyParser from "body-parser";
-//import ServerlessHttp from "serverless-http";
 import methodOverride from "method-override";
 
 const app = express();
@@ -32,6 +31,7 @@ app.listen(port, () => {
 });
 
 app.get("/", (req, res) => {
+  const posts = [];
   res.render("homepage.ejs");
 });
 
@@ -48,11 +48,39 @@ app.get("/login", (req, res) => {
 });
 
 app.post("/login", (req, res) => {
-  res.redirect("/");
+  const { email, password } = req.body;
+
+  if (!email || !/\S+@\S+\.\S+/.test(email)) {
+    return res.status(400).send("Invalid email address");
+  }
+  if (!password || password.length < 6) {
+    return res.status(400).send("Password must be at least 6 characters long");
+  }
+  res.redirect("/create");
 });
 
 app.get("/register", (req, res) => {
   res.render("register.ejs");
+});
+
+app.post("/register", (req, res) => {
+  const { username, email, password, confirmPassword } = req.body;
+
+  if (!username || username.length < 3) {
+    return res.status(400).send("Username must be at least 3 characters long");
+  }
+  if (!email || !/\S+@\S+\.\S+/.test(email)) {
+    return res.status(400).send("Invalid email address");
+  }
+  if (!email || password.length < 6) {
+    return res.status(400).send("Password must be at least 6 characters long");
+  }
+
+  if (password !== confirmPassword) {
+    return res.status(400).send("Passwords do not match");
+  }
+
+  res.redirect("/create");
 });
 
 app.get("/edit/:id", (req, res) => {
@@ -98,6 +126,10 @@ app.get("/resetpassword", (req, res) => {
 });
 
 app.post("/resetpassword", (req, res) => {
+  const { email } = req.body;
+  if (!email || !/\S+@\S+\.\S+/.test(email)) {
+    return res.status(400).send("Invalid email address");
+  }
   res.redirect("/login");
 });
 //app.use("./netlify/functions/index.js", Router);

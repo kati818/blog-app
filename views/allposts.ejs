@@ -11,6 +11,9 @@
 
       <div class="container-for-posts">
         <h1 class="allposts-header">All Posts</h1>
+        <% if (posts.length === 0) { %>
+        <p class="no-posts">No posts yet</p>
+        <% } else { %>
         <div class="posts-list">
           <ul>
             <% posts.forEach(function(post) { %>
@@ -32,6 +35,7 @@
             <% }) %>
           </ul>
         </div>
+        <% } %>
       </div>
     </main>
   </body>
