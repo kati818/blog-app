@@ -258,29 +258,28 @@ a {
   color: #00a693;
 }
 
-.login-link {
+.login-link-container {
   padding: 1rem 0;
 }
 
-.login-link p {
+.login-link-container p {
   font-size: 11px;
 }
 
-.login-link p a {
+.login-link {
   cursor: pointer;
   font-size: 1rem;
   color: #00a693;
 }
 
-.login-link p a:hover,
-.login-link p a:active {
+.login-link:hover,
+.login-link:active {
   color: #ffae00;
   transition: all 0.3s;
 }
- {
-  cursor: pointer;
-  font-size: 1rem;
-  color: #00a693;
+
+.back-home-link {
+  display: none;
 }
 
 .edit-icon {
@@ -364,5 +363,10 @@ footer {
   .copyright,
   .nav-icon {
     display: none;
+  }
+  .back-home-link {
+    display: block;
+    font-size: 0.7rem;
+    color: #00a693;
   }
 }
