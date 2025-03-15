@@ -355,4 +355,9 @@ footer {
     font-size: 0.7rem;
     color: #00a693;
   }
+
+  .allposts-header {
+    padding-bottom: 20px;
+    font-size: 3.6rem;
+  }
 }

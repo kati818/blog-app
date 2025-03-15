@@ -21,7 +21,7 @@ app.post("/submit", (req, res) => {
 
   posts.push(newPost);
 
-  res.redirect("/");
+  res.redirect("/allposts");
 });
 
 app.use(express.static("public"));
