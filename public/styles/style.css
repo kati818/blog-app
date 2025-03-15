@@ -360,4 +360,9 @@ footer {
   .homepage-header {
     font-size: 1.2rem;
   }
+
+  .copyright,
+  .nav-icon {
+    display: none;
+  }
 }
