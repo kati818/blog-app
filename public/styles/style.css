@@ -209,6 +209,12 @@ form {
   width: 100%;
 }
 
+.recovery-link {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .recovery-box {
   display: flex;
   align-items: center;
