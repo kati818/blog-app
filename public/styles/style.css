@@ -275,7 +275,7 @@ a {
   color: #b3b6b6;
 }
 
-.posts-list li {
+.post {
   list-style: none;
 }
 
@@ -359,5 +359,9 @@ footer {
   .allposts-header {
     padding-bottom: 20px;
     font-size: 3.6rem;
+  }
+
+  .post {
+    font-size: 1.6rem;
   }
 }
