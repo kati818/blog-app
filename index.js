@@ -118,7 +118,7 @@ app.delete("/:id", (req, res) => {
 
   posts.splice(postIndex, 1);
 
-  res.redirect("/");
+  res.redirect("/allposts");
 });
 
 app.get("/resetpassword", (req, res) => {
