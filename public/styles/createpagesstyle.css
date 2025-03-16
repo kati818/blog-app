@@ -94,7 +94,7 @@ a {
   color: #4e5a59;
 }
 
-.GreenButtonSolid {
+.green-button-solid {
   padding: 18px 64px;
   border: 1px solid #00a693;
   border-radius: 0;
@@ -106,8 +106,8 @@ a {
   line-height: 1.5;
 }
 
-.GreenButtonSolid:hover,
-.GreenButtonSolid:active {
+.green-button-solid:hover,
+.green-button-solid:active {
   border: 1px solid #00a693;
   background: #fff;
   color: #00a693;

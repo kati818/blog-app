@@ -262,6 +262,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
+  padding-top: 6rem;
 }
 
 .allposts-header {
@@ -277,6 +278,7 @@ a {
 
 .post {
   list-style: none;
+  font-size: 3rem;
 }
 
 .large-textarea {
@@ -361,6 +363,7 @@ footer {
   .allposts-header {
     padding-bottom: 20px;
     font-size: 3.6rem;
+    font-weight: 500;
   }
 
   .post {
