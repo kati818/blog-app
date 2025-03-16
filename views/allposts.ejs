@@ -12,9 +12,9 @@
 
       <div class="container-for-posts">
         <h1 class="allposts-header">All Posts</h1>
+
         <% if (posts.length === 0) { %>
         <p class="no-posts">No posts yet</p>
-        <a href="/create" class="new-post">Create a new post &rarr;</a>
         <% } else { %>
         <div class="posts-list">
           <ul>
@@ -41,6 +41,7 @@
           </ul>
         </div>
         <% } %>
+        <a href="/create" class="new-post">Create a new post &rarr;</a>
       </div>
     </main>
     <%- include("partials/footer.ejs") %>
