@@ -106,7 +106,7 @@ app.put("/:id", (req, res) => {
   posts[postIndex].title = title;
   posts[postIndex].content = content;
 
-  res.redirect("/");
+  res.redirect("/allposts");
 });
 
 app.delete("/:id", (req, res) => {

@@ -147,7 +147,13 @@ body {
 }
 
 .login-container,
-.register-container,
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .post-form-container {
   display: flex;
   justify-content: center;
@@ -156,16 +162,14 @@ body {
 }
 
 .login-box h1,
-.register-box h1,
-.create-box h1 {
+.register-box h1 {
   font-size: 3.6rem;
   font-weight: 500;
   padding-bottom: 1rem;
 }
 
 .login-box form,
-.register-box form,
-.create-box form {
+.register-box form {
   display: flex;
   flex-flow: column nowrap;
   gap: 12px;
@@ -175,11 +179,31 @@ form {
   margin: 0;
 }
 
-.input-group input {
-  border: solid rgba(0, 0, 0, 0.25) 1px;
-  font-size: 11pt;
-  padding: 16px;
+.form-box {
   width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.large-textarea {
+  height: 200px;
+  resize: vertical;
 }
 
 .recovery-link {
