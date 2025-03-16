@@ -256,7 +256,8 @@ a {
 }
 
 .edit-icon {
-  color: #fff;
+  color: #ffae00;
+  cursor: pointer;
 }
 
 .container-for-posts {
@@ -298,7 +299,9 @@ a {
 
 .post {
   list-style: none;
-  font-size: 1.8rem;
+  text-align: center;
+
+  font-size: 1.4rem;
   font-weight: 400;
 }
 

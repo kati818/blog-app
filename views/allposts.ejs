@@ -20,19 +20,21 @@
             <% posts.forEach(function(post) { %>
             <li class="post">
               <%= post.title %>: <%= post.content %>
-              <a class="edit-icon" href="/edit/<%= post.id %>"
-                ><ion-icon name="create-outline"></ion-icon
+              <a  href="/edit/<%= post.id %>"
+                ><ion-icon name="create-outline" class="edit-icon""></ion-icon
               ></a>
               <form
                 action="/<%= post.id %>?_method=DELETE"
                 method="POST"
                 style="display: inline"
               >
-                <ion-icon name="trash-outline"></ion-icon>
+                <ion-icon name="trash-outline" class="edit-icon"></ion-icon>
               </form>
             </li>
+            
             <% }) %>
           </ul>
+         
         </div>
         <% } %>
       </div>
