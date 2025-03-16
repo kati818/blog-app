@@ -18,7 +18,7 @@
           <ul>
             <% posts.forEach(function(post) { %>
             <li class="post">
-              <strong><%= post.title %></strong>: <%= post.content %>
+              <%= post.title %>: <%= post.content %>
               <a class="edit-icon" href="/edit/<%= post.id %>"
                 ><ion-icon name="create-outline"></ion-icon
               ></a>
@@ -27,9 +27,7 @@
                 method="POST"
                 style="display: inline"
               >
-                <button type="submit">
-                  <ion-icon name="trash-outline"></ion-icon>
-                </button>
+                <ion-icon name="trash-outline"></ion-icon>
               </form>
             </li>
             <% }) %>
