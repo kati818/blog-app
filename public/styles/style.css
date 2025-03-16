@@ -322,6 +322,9 @@ footer {
 
   .nav-icon {
     display: block;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
     font-size: 2rem;
     color: #00a693;
   }
@@ -346,8 +349,7 @@ footer {
       blink-caret-small 1s step-end infinite;
   }
 
-  .copyright,
-  .nav-icon {
+  .copyright {
     display: none;
   }
   .back-home-link {
