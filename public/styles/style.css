@@ -290,6 +290,10 @@ a {
   color: #ffae00;
   cursor: pointer;
 }
+.edit-icon:hover {
+  color: #00a693;
+  transition: all 0.3s;
+}
 
 .container-for-posts {
   display: flex;
@@ -313,17 +317,16 @@ a {
 }
 
 .new-post {
-  color: #ffae00;
+  color: #fff;
+  background-color: #ffae00;
   text-align: center;
-  border: #ffae00 1px solid;
   padding: 1rem;
   border-radius: 6px;
   background-color: none;
 }
 
 .new-post:hover {
-  background-color: #ffae00;
-  color: #fff;
+  background-color: #00a693;
   cursor: pointer;
   transition: all 0.3s;
 }
