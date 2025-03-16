@@ -188,10 +188,6 @@ form {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.input-group {
-  margin-bottom: 1.5rem;
-}
-
 .input-group input,
 .input-group textarea {
   width: 100%;
