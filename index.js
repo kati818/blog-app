@@ -60,7 +60,7 @@ app.post("/login", (req, res) => {
 });
 
 app.get("/register", (req, res) => {
-  res.render("register.ejs");
+  res.render("register.ejs", { error: null });
 });
 
 app.post("/register", (req, res) => {
@@ -72,14 +72,16 @@ app.post("/register", (req, res) => {
   if (!email || !/\S+@\S+\.\S+/.test(email)) {
     return res.status(400).send("Invalid email address");
   }
-  if (!email || password.length < 6) {
+  if (!password || password.length < 6) {
     return res.status(400).send("Password must be at least 6 characters long");
   }
-
   if (password !== confirmPassword) {
-    return res.status(400).send("Passwords do not match");
+    return res.render("register.ejs", {
+      error: "Passwords do not match! Try again.",
+    });
   }
 
+  // Proceed with registration logic
   res.redirect("/create");
 });
 

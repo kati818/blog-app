@@ -162,7 +162,7 @@ body {
 }
 
 .login-box h1,
-.register-box h1 {
+.form-box h1 {
   font-size: 3.6rem;
   font-weight: 500;
   padding-bottom: 1rem;
@@ -173,6 +173,13 @@ body {
   display: flex;
   flex-flow: column nowrap;
   gap: 12px;
+}
+
+.error-message {
+  color: red;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 form {
@@ -186,6 +193,10 @@ form {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  margin-bottom: 2rem;
 }
 
 .input-group input,
@@ -234,7 +245,7 @@ a {
 .green-button-solid {
   padding: 18px 64px;
   border: 1px solid #00a693;
-  border-radius: 0;
+  border-radius: 20px;
   background: #00a693;
   background-color: #00a693;
   color: #fff;
