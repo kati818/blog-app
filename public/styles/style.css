@@ -277,6 +277,23 @@ a {
   text-align: center;
   font-weight: 300;
   color: #b3b6b6;
+  padding-bottom: 2.5rem;
+}
+
+.new-post {
+  color: #ffae00;
+  text-align: center;
+  border: #ffae00 1px solid;
+  padding: 1rem;
+  border-radius: 6px;
+  background-color: none;
+}
+
+.new-post:hover {
+  background-color: #ffae00;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
 .post {
